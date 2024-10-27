@@ -67,11 +67,11 @@ let boolb = Boolean(b);
 console.log(boolb);*/
 
 //arrays
-let colors = ['red','green','blue','yellow','orange']; // first way
+/*let colors = ['red','green','blue','yellow','orange']; // first way
 let n_colors = Array('tangerine','purple','cyan','violet','saffron'); // second way using Array() constructor
 //accesing array and get its length
 console.log(colors[2]);//index 2 element
-console.log(n_colors.length);
+console.log(n_colors.length);*/
 //push() - to add element at end
 //unshift() - to add element at beginning
 //pop() - to remove element at end of array
