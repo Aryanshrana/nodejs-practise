@@ -55,7 +55,7 @@ console.log(person.address.building);*/
 
 //Boolean
 // you can change the any value to bollean with Boolean() function
-let error = "Aryansh is learning"
+/*let error = "Aryansh is learning"
 let haserror = Boolean(error);
 console.log(haserror);
 
@@ -64,4 +64,26 @@ let boola = Boolean(a);
 console.log(boola);
 let b = NaN;
 let boolb = Boolean(b);
-console.log(boolb);
+console.log(boolb);*/
+
+//arrays
+let colors = ['red','green','blue','yellow','orange']; // first way
+let n_colors = Array('tangerine','purple','cyan','violet','saffron'); // second way using Array() constructor
+//accesing array and get its length
+console.log(colors[2]);//index 2 element
+console.log(n_colors.length);
+//push() - to add element at end
+//unshift() - to add element at beginning
+//pop() - to remove element at end of array
+//shift() - to remove element at beginning
+/*
+colors.push('brown')
+const color = colors.pop()
+console.log(color);
+console.log(colors)
+n_colors.unshift('magenta');
+const n_color = n_colors.shift();
+console.log(n_color)
+console.log(n_colors);
+*/
+
