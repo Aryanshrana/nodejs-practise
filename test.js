@@ -86,4 +86,16 @@ const n_color = n_colors.shift();
 console.log(n_color)
 console.log(n_colors);
 */
+// comparing object with valueOf() operator
+let apple = {
+    valueOf : function() {
+        return 40;
+    },
+};
+let orange = {
+    valueOf : function() {
+        return 30;
+    },
+};
 
+console.log(apple > orange);
