@@ -99,3 +99,14 @@ let orange = {
 };
 
 console.log(apple > orange);
+//logical or, logical and, logical null operator
+// x||=y, x&&=y, x??=y
+let x;
+x||="some-value"; // it give values if x is falsy
+console.log(x);
+//x is truthy now
+x&&="new-value"; // it gives values if x is truthy
+console.log(x);
+x = null
+x??="latest-value"; // it gives values when x is null or undefined
+console.log(x);
