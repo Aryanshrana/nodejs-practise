@@ -87,7 +87,7 @@ console.log(n_color)
 console.log(n_colors);
 */
 // comparing object with valueOf() operator
-let apple = {
+/*let apple = {
     valueOf : function() {
         return 40;
     },
@@ -110,3 +110,32 @@ console.log(x);
 x = null
 x??="latest-value"; // it gives values when x is null or undefined
 console.log(x);
+*/
+//function returning another function - in js functions are first class citizens
+
+function compareby(propertyname){
+    return function(a,b) {
+        let x = a[propertyname];
+        let y = b[propertyname];
+
+        if(x>y){
+            return 1;
+        }
+        else if(x<y){
+            return -1
+        }
+        else{
+            return 0;
+        }
+    };
+}
+let products = [
+    {name: 'iphone', price: 900},
+    {name: 'Samsung A13F', price: 750},
+    {name: 'Nothing', price: 800},
+];
+console.log('sorting according to price');
+products.sort(compareby('price'));
+console.table(products);
+
+
