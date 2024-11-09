@@ -113,7 +113,7 @@ console.log(x);
 */
 //function returning another function - in js functions are first class citizens
 
-function compareby(propertyname){
+/*function compareby(propertyname){
     return function(a,b) {
         let x = a[propertyname];
         let y = b[propertyname];
@@ -137,5 +137,26 @@ let products = [
 console.log('sorting according to price');
 products.sort(compareby('price'));
 console.table(products);
+*/
+
+//Anonymous functions
+//A function without name
+let show = function() {
+    console.log("i am anonymous");
+};
+show();
+//using anonymous function immediatly after exection
+setTimeout(function() {
+    console.log("i am executing after 2 sec")
+}, 2000);
+//executing anonymous immeditaely function with passing arguments
+let person = {
+    firstname : 'Aryansh',
+    lastname: 'Rana'
+};
+( function() {
+    console.log('immdiately invoked function exectution ' + person.firstname + ' ' + person.lastname);
+}) (person);
+
 
 
